@@ -43,16 +43,33 @@
             <div class="container px-4 px-lg-5">
                 <div class="row gx-4 gx-lg-5 justify-content-center">
                     <div class="col-lg-8">
-                        <h2 class="text-white mb-4">ANIMACIONES DOM</h2>
+                        <h2 class="text-white mb-4">EVENTOS DOM</h2>
+                         <div onmouseover="mOver(this)" onmouseout="mOut(this)" 
+style=" font-size: large; background-color:#fff ;width:240px;height:20px;padding:80px; margin:0 auto"; align="text-center" >
+Mouse Over Me</div>
+
+<script>
+function mOver(obj) {
+  obj.innerHTML = "Vamos a aprender!"
+}
+
+function mOut(obj) {
+  obj.innerHTML = "Bienvenido"
+}
+</script>
                         <p class="text-white-50">
+
                             Las animaciones de JavaScript se realizan mediante la programación de cambios graduales en el estilo de un elemento.
 
 Los cambios son llamados por un temporizador. Cuando el intervalo del temporizador es pequeño, la animación parece continua.
                         </p>
-                    </div>
+                    
+
+              
+</div>
                 </div>
-                <img class="imagen" src="images/jsani.png" width="350px" height="350px" alt="..." />
-            </div>
+                </div>
+            
         </section>
         <!-- Projects-->
         <section class="projects-section bg-light" id="Ejemplo1">
