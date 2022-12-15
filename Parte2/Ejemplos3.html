@@ -43,15 +43,28 @@
             <div class="container px-4 px-lg-5">
                 <div class="row gx-4 gx-lg-5 justify-content-center">
                     <div class="col-lg-8">
-                        <h2 class="text-white mb-4">ANIMACIONES DOM</h2>
+                        <h2 class="text-white mb-4">EVENTLISTENE DOMR</h2>
                         <p class="text-white-50">
-                            Las animaciones de JavaScript se realizan mediante la programación de cambios graduales en el estilo de un elemento.
 
-Los cambios son llamados por un temporizador. Cuando el intervalo del temporizador es pequeño, la animación parece continua.
-                        </p>
+<button  class="imagen" id="myBtn">Descubre lo que puedo hacer !</button><br><br>
+<script>
+var x = document.getElementById("myBtn");
+x.addEventListener("click", myFunction);
+x.addEventListener("click", someOtherFunction);
+
+function myFunction() {
+  alert ("Puedes mostrar un mensaje principal!");
+}
+
+function someOtherFunction() {
+  alert ("Y tambien un mensaje auxiliar!");
+}
+</script>
+
+                            Hay dos formas de propagación de eventos en HTML DOM, burbujeo y captura.La propagación de eventos es una forma de definir el orden de los elementos cuando ocurre un evento. Si tiene un elemento "p" dentro de un elemento "div" y el usuario hace clic en el elemento "p", ¿qué evento de "clic" de elemento debe manejarse primero?. Al burbujear , el evento del elemento más interno se maneja primero y luego el externo: el evento de clic del elemento "p" se maneja primero, luego el evento de clic del elemento "div". Al capturar el evento del elemento más externo se maneja primero y luego el interno: el evento de clic del elemento "div" se manejará primero, luego el evento de clic del elemento 
                     </div>
                 </div>
-                <img class="imagen" src="images/jsani.png" width="350px" height="350px" alt="..." />
+                
             </div>
         </section>
         <!-- Projects-->

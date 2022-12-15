@@ -43,15 +43,24 @@
             <div class="container px-4 px-lg-5">
                 <div class="row gx-4 gx-lg-5 justify-content-center">
                     <div class="col-lg-8">
-                        <h2 class="text-white mb-4">ANIMACIONES DOM</h2>
+                        <h2 class="text-white mb-4">NODE DOM</h2>
                         <p class="text-white-50">
-                            Las animaciones de JavaScript se realizan mediante la programación de cambios graduales en el estilo de un elemento.
+                          <div class="con">
+<p  id="p1"> a) Vamos a aprender Animacion Dom.</p>
+<p id="p2"> b) Vamos a aprender Nodos Dom.</p>
+</div><br><br>
 
-Los cambios son llamados por un temporizador. Cuando el intervalo del temporizador es pequeño, la animación parece continua.
+<button onclick="myFunction()">¿Qué vamos a aprender?</button><br><br>
+
+<script>
+function myFunction() {
+document.getElementById("p1").remove();
+}
+</script>
+                           El appendChild()método del ejemplo anterior, agregó el nuevo elemento como el último hijo del padre.Si no quieres eso, puedes usar el insertBefore()método.                            Para eliminar un elemento HTML, utilice el remove() método.
                         </p>
                     </div>
                 </div>
-                <img class="imagen" src="images/jsani.png" width="350px" height="350px" alt="..." />
             </div>
         </section>
         <!-- Projects-->

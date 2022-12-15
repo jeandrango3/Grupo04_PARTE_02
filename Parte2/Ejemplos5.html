@@ -43,15 +43,32 @@
             <div class="container px-4 px-lg-5">
                 <div class="row gx-4 gx-lg-5 justify-content-center">
                     <div class="col-lg-8">
-                        <h2 class="text-white mb-4">ANIMACIONES DOM</h2>
+                        <h2 class="text-white mb-4">COLECCIONES DOM</h2>
+<p> ¡Una HTMLCollection NO es una matriz!</p>
                         <p class="text-white-50">
-                            Las animaciones de JavaScript se realizan mediante la programación de cambios graduales en el estilo de un elemento.
+                          <ul>
+                        
+                        <li>Una HTMLCollection puede parecer una matriz, pero no lo es.</li>
+                         <li>Puede recorrer la lista y hacer referencia a los elementos con un número (como una matriz).
+</li>
+                          <li>Sin embargo, no puede usar métodos de matriz como valueOf(), pop(), push() o join() en una HTMLCollection. </li>
 
-Los cambios son llamados por un temporizador. Cuando el intervalo del temporizador es pequeño, la animación parece continua.
-                        </p>
+                          </ul><br><br>
+                           <button class="imagen" onclick="myFunction()">Importante ! </button>
+
+<script>
+function myFunction() {
+  const myCollection = document.getElementsByTagName("p");
+  for (let i = 0; i < myCollection.length; i++) {
+    myCollection[i].style.color = "red";
+  }
+}
+</script>
+
+              </p>
                     </div>
                 </div>
-                <img class="imagen" src="images/jsani.png" width="350px" height="350px" alt="..." />
+                
             </div>
         </section>
         <!-- Projects-->

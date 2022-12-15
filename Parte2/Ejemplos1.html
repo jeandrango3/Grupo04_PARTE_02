@@ -44,15 +44,57 @@
                 <div class="row gx-4 gx-lg-5 justify-content-center">
                     <div class="col-lg-8">
                         <h2 class="text-white mb-4">ANIMACIONES DOM</h2>
+                        ´<style>
+#container {
+  width: 200px;
+  height: 200px;
+  position: relative;
+  background: salmon;
+  margin: 0 auto;
+}
+#animate {
+  width: 20px;
+  height: 20px;
+  position: absolute;
+  background-color: red;
+}
+</style>
+<body>
+
+<p ><button class="imagen" onclick="myMove()">Descubre!</button></p> 
+
+<div id ="container">
+  <div id ="animate"></div>
+</div>
+
+<script>
+function myMove() {
+  let id = null;
+  const elem = document.getElementById("animate");   
+  let pos = 0;
+  clearInterval(id);
+  id = setInterval(frame, 5);
+  function frame() {
+    if (pos == 150) {
+      clearInterval(id);
+    } else {
+      pos++; 
+      elem.style.top = pos + "px"; 
+      elem.style.left = pos + "px"; 
+    }
+  }
+}
+</script>
+
                         <p class="text-white-50">
                             Las animaciones de JavaScript se realizan mediante la programación de cambios graduales en el estilo de un elemento.
 
 Los cambios son llamados por un temporizador. Cuando el intervalo del temporizador es pequeño, la animación parece continua.
                         </p>
-                        
+
                     </div>
                 </div>
-                <img class="imagen" src="images/jsani.png" width="350px" height="350px" alt="..." />
+                
             </div>
         </section>
         <!-- Projects-->
