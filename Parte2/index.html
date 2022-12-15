@@ -12,6 +12,13 @@
     <link rel="stylesheet" href="css/bootstrap.css">
     <link rel="stylesheet" href="css/fonts.css">
     <link rel="stylesheet" href="css/style.css">
+
+    <link rel="stylesheet" href="/lib/w3schools30.css">
+<link rel='stylesheet' href='/lib/codemirror.css'>
+<script src='/lib/codemirror.js'></script>
+<script src='/lib/codemirror_jsx.js'></script>
+
+
     <!--[if lt IE 10]>
     <div style="background: #212121; padding: 10px 0; box-shadow: 3px 3px 5px 0 rgba(0,0,0,.3); clear: both; text-align:center; position: relative; z-index:1;"><a href="http://windows.microsoft.com/en-US/internet-explorer/"><img src="images/ie8-panel/warning_bar_0000_us.jpg" border="0" height="42" width="820" alt="You are using an outdated browser. For a faster, safer browsing experience, upgrade for free today."></a></div>
     <script src="js/html5shiv.min.js"></script>
@@ -57,7 +64,7 @@
       <header class="section page-header">
         <!-- RD Navbar-->
         <div class="rd-navbar-wrap">
-          <nav class="rd-navbar rd-navbar-modern" data-layout="rd-navbar-fixed" data-sm-layout="rd-navbar-fixed" data-md-layout="rd-navbar-fixed" data-md-device-layout="rd-navbar-fixed" data-lg-layout="rd-navbar-static" data-lg-device-layout="rd-navbar-fixed" data-xl-layout="rd-navbar-static" data-xl-device-layout="rd-navbar-static" data-xxl-layout="rd-navbar-static" data-xxl-device-layout="rd-navbar-static" data-lg-stick-up-offset="56px" data-xl-stick-up-offset="56px" data-xxl-stick-up-offset="56px" data-lg-stick-up="true" data-xl-stick-up="true" data-xxl-stick-up="true">
+          <nav class="rd-navbar rd-navbar-modern" data-layout="rd-navbar-fixed" data-sm-layout="rd-navbar-fixed" data-md-layout="rd-navbar-fixed" data-md-device-layout="rd-navbar-fixed" data-lg-layout="rd-navbar-static" data-lg-device-layout="rd-navbar-fixed" data-xl-layout="rd-navbar-static" data-xl-device-layout="rd-navbar-static" data-xxl-layout="rd-navbar-static" data-xxl-device-layout="rd-navbar-static" data-lg-stick-up-offset="56px" data-xl-stick-up-offset="56px" data-xxl-stick-up-offset="56px" data-lg-stick-up="true" data-xl-stick-up="true" data-xxl-stick-up=" true">
             <div class="rd-navbar-inner-outer">
               <div class="rd-navbar-inner">
                 <!-- RD Navbar Panel-->
@@ -102,15 +109,21 @@
       <div class="container mt-5">
         <div class="row">
           <div class="col-md-6 col-sm-6">
-            <div class="header-content-left">
-              <img src="images/fondo.jpg" style="width: 100%; margin-top: 10%;">
+            <div >
+              <img class="imagen" src="images/fondo.jpg" style="width: 100%; margin-top: 10%;">
             </div>  
           </div>
           <div class="col-md-6 col-sm-6">
-            <div class="header-content-right">
-              <h1 class="display-4">Reseña de los mejores componentes para tu PC</h1>
-              <p class="mt-5">En esta página podrás aprender más sobre los mejores componentes para construir o mejorar tu computador de escritorio, seleccionamos las mejores marcas y los mejores precios del mercado para que tengas una información precisa</p>
-              <a href="#" class="btn btn-outline-secondary header-btn btn-lg mt-2">Read More</a>
+            <div  class="list-category-item wow fadeInRight" role="presentation">
+              <h1 class="display-4">JS HTML  AVANZADO</h1>
+              <p class="mt-5">En el presente curso, se desarrollarán tanto los elementos avanzados de HTML5 y CSS3, como así también la posibilidad de trabajar conjuntamente con el lenguaje de programación Javascript dandole un comportamiento al sitio. Para ello, integraremos los lenguajes interpretados por el navegador.</p>
+              <a href="#" class="btn btn-outline-secondary"><h onclick="changeText(this)">Vamos a aprender </h3>
+
+<script>
+function changeText(id) {
+  id.innerHTML = "Con HTML DOM, JavaScript puede acceder y cambiar <br>todos los elementos de un documento HTML.";
+}
+</script></a>
             </div>
           </div>
         </div>
@@ -119,10 +132,8 @@
 
 
       <!-- What We Offer-->
-       <section class="section section-md bg-default">
-        <div class="container">
-          <h3 class="oh-desktop"><span class="d-inline-block wow slideInDown">JS HTML  AVANZADO</span></h3>
-
+       <
+  
            <!-- Section CTA-->
       <section class="section section-lg bg-default" id="animaciones">
         <div class="container">
@@ -158,8 +169,8 @@
         </div>          
       </section>
         
-        </div>
-      </section>
+       
+      
 
               
                
@@ -169,8 +180,8 @@
             <div class="col-lg-4 col-xl-3">
               
               <ul class="nav list-category list-category-down-md-inline-block">
-                <li class="list-category-item wow fadeInRight" role="presentation" data-wow-delay="0s"><a class="active" href="#tabs-4-1" data-toggle="tab">Encontrar elementos HTML</a></li>
-                <li class="list-category-item wow fadeInRight" role="presentation" data-wow-delay=".1s"><a href="#tabs-4-2" data-toggle="tab">Cambio de elementos HTML</a></li>
+                <li class="list-category-item wow fadeInRight" role="presentation" data-wow-delay="0s"><a class="active" href="#tabs-4-4" data-toggle="tab">Reaccionar a los eventos</a></li>
+                <li class="list-category-item wow fadeInRight" role="presentation" data-wow-delay=".1s"><a href="#tabs-4-5" data-toggle="tab">Atributos de eventos HTML</a></li>
                 <li class="list-category-item wow fadeInRight" role="presentation" data-wow-delay=".2s"><a href="Ejemplos2.html" data-toggle="tab">Vamos a aprender </a></li>
                
               
@@ -178,16 +189,25 @@
             <div class="col-lg-8 col-xl-9">
               <!-- Tab panes-->
               <div class="tab-content tab-content-1">
-                <div class="tab-pane fade show active" id="tabs-4-1">
+                <div class="tab-pane fade show active" id="tabs-4-4">
                   <h4>Eventos DOM </h4>
-                  <p>El objeto del documento HTML DOM es el propietario de todos los demás objetos en su página web.El objeto de documento HTML DOM, el objeto del documento representa su página web. Si desea acceder a cualquier elemento en una página HTML, siempre comienza accediendo al objeto del documento. A continuación se muestran algunos ejemplos de cómo puede utilizar el objeto de documento para acceder y manipular HTML.</p><img src="images/4.2.png" alt="" width="835" height="418"/>
+                  <p>Un JavaScript se puede ejecutar cuando ocurre un evento, como cuando un usuario hace clic en un elemento HTML.Para ejecutar código cuando un usuario hace clic en un elemento, agregue código JavaScript a un atributo de evento HTML: onclick=JavaScript
+                  Ejemplos de eventos HTML:</p>
+                  <ul>
+                    <li>Cuando un usuario hace clic con el mouse</li>
+                    <li>Cuando una página web ha cargado</li>
+                    <li>Cuando se ha cargado una imagen</li>
+                    <li>Cuando el mouse se mueve sobre un elemento</li>
+                    <li>Cuando se cambia un campo de entrada</li>
+                    <li>Cuando se envía un formulario HTML</li>
+                    <li>Cuando un usuario pulsa una tecla</li>
+                  </ul>
+
                 </div>
-                <div class="tab-pane fade" id="tabs-4-2"><h4>COMPONENTES </h4>
-                  <img src="images/4.3.png" alt="" width="835" height="418"/>
+                <div class="tab-pane fade" id="tabs-4-5"><h4>Atributos de eventos HTML</h4><p>ara asignar eventos a elementos HTML, puede usar atributos de eventos. Asigne un evento onclick a un elemento de botón:</p>
+                  <img src="images/e1.png" alt="" width="835" height="418"/>
                 </div>
-                <div class="tab-pane fade" id="tabs-4-3"><h4>COMPONENTES </h4>
-                <img src="images/4.4.png" alt="" width="835" height="418"/>
-                </div>
+                
                 
 
               </div>
@@ -202,8 +222,8 @@
             <div class="col-lg-4 col-xl-3">
               
               <ul class="nav list-category list-category-down-md-inline-block">
-                <li class="list-category-item wow fadeInRight" role="presentation" data-wow-delay="0s"><a class="active" href="#tabs-4-1" data-toggle="tab">Encontrar elementos HTML</a></li>
-                <li class="list-category-item wow fadeInRight" role="presentation" data-wow-delay=".1s"><a href="#tabs-4-2" data-toggle="tab">Cambio de elementos HTML</a></li>
+                <li class="list-category-item wow fadeInRight" role="presentation" data-wow-delay="0s"><a class="active" href="#tabs-4-6" data-toggle="tab">El método addEventListener()</a></li>
+                <li class="list-category-item wow fadeInRight" role="presentation" data-wow-delay=".1s"><a href="#tabs-4-7" data-toggle="tab">Cambio de elementos HTML</a></li>
                 <li class="list-category-item wow fadeInRight" role="presentation" data-wow-delay=".2s"><a href="Ejemplos3.html" data-toggle="tab">Vamos a aprender </a></li>
                
               
@@ -211,19 +231,27 @@
             <div class="col-lg-8 col-xl-9">
               <!-- Tab panes-->
               <div class="tab-content tab-content-1">
-                <div class="tab-pane fade show active" id="tabs-4-1">
+                <div class="tab-pane fade show active" id="tabs-4-6">
                   <h4>Eventlistener DOM </h4>
-                  <p>El objeto del documento HTML DOM es el propietario de todos los demás objetos en su página web.El objeto de documento HTML DOM, el objeto del documento representa su página web. Si desea acceder a cualquier elemento en una página HTML, siempre comienza accediendo al objeto del documento. A continuación se muestran algunos ejemplos de cómo puede utilizar el objeto de documento para acceder y manipular HTML.</p><img src="images/4.2.png" alt="" width="835" height="418"/>
+                  <p>El objeto del documento HTML DOM es el propietario de todos los demás objetos en su página web.El objeto de documento HTML DOM, el objeto del documento representa su página web. Si desea acceder a cualquier elemento en una página HTML, siempre comienza accediendo al objeto del documento. A continuación se muestran algunos ejemplos de cómo puede utilizar el objeto de documento para acceder y manipular HTML.</p>
                 </div>
-                <div class="tab-pane fade" id="tabs-4-2"><h4>COMPONENTES </h4>
-                  <img src="images/4.3.png" alt="" width="835" height="418"/>
-                </div>
-                <div class="tab-pane fade" id="tabs-4-3"><h4>COMPONENTES </h4>
-                <img src="images/4.4.png" alt="" width="835" height="418"/>
-                </div>
-                
+                <div class="tab-pane fade" id="tabs-4-7"><h4>El método addEventListener </h4><p><ul>
+                  <li>El addEventListener()método adjunta un controlador de eventos al elemento especificado.</li>
+                   <li>El addEventListener()método adjunta un controlador de eventos a un elemento sin sobrescribir los controladores de eventos existentes.</li>
+                    <li>Puede agregar muchos controladores de eventos a un elemento.</li>
+                    <li>Puede agregar muchos controladores de eventos del mismo tipo a un elemento, es decir, dos eventos de "clic".</li>
+                    <li>Puede agregar detectores de eventos a cualquier objeto DOM, no solo elementos HTML. es decir, el objeto ventana.</li>
+                    <li>El addEventListener()método facilita el control de cómo reacciona el evento al burbujeo.</li>  <img src="images/el1.png" alt="" width="835" height="418"/>
 
-              </div>
+
+
+
+
+
+                </ul></p>
+                  
+                </div>
+               
             </div>
           </div>
         </div>
@@ -235,8 +263,8 @@
             <div class="col-lg-4 col-xl-3">
               
               <ul class="nav list-category list-category-down-md-inline-block">
-                <li class="list-category-item wow fadeInRight" role="presentation" data-wow-delay="0s"><a class="active" href="#tabs-4-1" data-toggle="tab">Encontrar elementos HTML</a></li>
-                <li class="list-category-item wow fadeInRight" role="presentation" data-wow-delay=".1s"><a href="#tabs-4-2" data-toggle="tab">Cambio de elementos HTML</a></li>
+                <li class="list-category-item wow fadeInRight" role="presentation" data-wow-delay="0s"><a class="active" href="#tabs-4-8" data-toggle="tab">Creación de nuevos nodos HTML</a></li>
+                <li class="list-category-item wow fadeInRight" role="presentation" data-wow-delay=".1s"><a href="#tabs-4-9" data-toggle="tab">insertBefore()</a></li>
                 <li class="list-category-item wow fadeInRight" role="presentation" data-wow-delay=".2s"><a href="Ejemplos4.html" data-toggle="tab">Vamos a aprender </a></li>
                
               
@@ -244,16 +272,14 @@
             <div class="col-lg-8 col-xl-9">
               <!-- Tab panes-->
               <div class="tab-content tab-content-1">
-                <div class="tab-pane fade show active" id="tabs-4-1">
+                <div class="tab-pane fade show active" id="tabs-4-8">
                   <h4>NODE DOM </h4>
-                  <p>El objeto del documento HTML DOM es el propietario de todos los demás objetos en su página web.El objeto de documento HTML DOM, el objeto del documento representa su página web. Si desea acceder a cualquier elemento en una página HTML, siempre comienza accediendo al objeto del documento. A continuación se muestran algunos ejemplos de cómo puede utilizar el objeto de documento para acceder y manipular HTML.</p><img src="images/4.2.png" alt="" width="835" height="418"/>
+                  <p>Para agregar un nuevo elemento al HTML DOM, primero debe crear el elemento (nodo de elemento) y luego agregarlo a un elemento existente.</p><img src="images/n1.png" alt="" width="835" height="418"/>
                 </div>
-                <div class="tab-pane fade" id="tabs-4-2"><h4>COMPONENTES </h4>
-                  <img src="images/4.3.png" alt="" width="835" height="418"/>
+                <div class="tab-pane fade" id="tabs-4-9"><h4>Nuevos nodos</h4><p>El appendChild()método del ejemplo anterior, agregó el nuevo elemento como el último hijo del padre. Si no quieres eso, puedes usar el insertBefore()método:</p>
+                  <img src="images/n2.png" alt="" width="835" height="418"/>
                 </div>
-                <div class="tab-pane fade" id="tabs-4-3"><h4>COMPONENTES </h4>
-                <img src="images/4.4.png" alt="" width="835" height="418"/>
-                </div>
+                
                 
 
               </div>
@@ -269,8 +295,8 @@
             <div class="col-lg-4 col-xl-3">
               
               <ul class="nav list-category list-category-down-md-inline-block">
-                <li class="list-category-item wow fadeInRight" role="presentation" data-wow-delay="0s"><a class="active" href="#tabs-4-1" data-toggle="tab">Encontrar elementos HTML</a></li>
-                <li class="list-category-item wow fadeInRight" role="presentation" data-wow-delay=".1s"><a href="#tabs-4-2" data-toggle="tab">Cambio de elementos HTML</a></li>
+                <li class="list-category-item wow fadeInRight" role="presentation" data-wow-delay="0s"><a class="active" href="#tabs-4-10" data-toggle="tab">El objeto HTMLCollection</a></li>
+                <li class="list-category-item wow fadeInRight" role="presentation" data-wow-delay=".1s"><a href="#tabs-4-11" data-toggle="tab">Cambio de elementos HTML</a></li>
                 <li class="list-category-item wow fadeInRight" role="presentation" data-wow-delay=".2s"><a href="Ejemplos5.html" data-toggle="tab">Vamos a aprender </a></li>
                
               
@@ -278,16 +304,14 @@
             <div class="col-lg-8 col-xl-9">
               <!-- Tab panes-->
               <div class="tab-content tab-content-1">
-                <div class="tab-pane fade show active" id="tabs-4-1">
+                <div class="tab-pane fade show active" id="tabs-4-10">
                   <h4>Colecciones DOM </h4>
-                  <p>El objeto del documento HTML DOM es el propietario de todos los demás objetos en su página web.El objeto de documento HTML DOM, el objeto del documento representa su página web. Si desea acceder a cualquier elemento en una página HTML, siempre comienza accediendo al objeto del documento. A continuación se muestran algunos ejemplos de cómo puede utilizar el objeto de documento para acceder y manipular HTML.</p><img src="images/4.2.png" alt="" width="835" height="418"/>
+                  <p>El getElementsByTagName()método devuelve un HTMLCollectionobjeto. Un HTMLCollectionobjeto es una lista similar a una matriz (colección) de elementos HTML. El siguiente código selecciona todos los "p" elementos en un documento:</p><img src="images/c1.png" alt="" width="835" height="418"/>
                 </div>
-                <div class="tab-pane fade" id="tabs-4-2"><h4>COMPONENTES </h4>
-                  <img src="images/4.3.png" alt="" width="835" height="418"/>
+                <div class="tab-pane fade" id="tabs-4-11"><h4>Importante</h4><p>Una HTMLCollection puede parecer una matriz, pero no lo es.Puede recorrer la lista y hacer referencia a los elementos con un número (como una matriz).Sin embargo, no puede usar métodos de matriz como valueOf(), pop(), push() o join() en una HTMLCollection.</p>
+                  
                 </div>
-                <div class="tab-pane fade" id="tabs-4-3"><h4>COMPONENTES </h4>
-                <img src="images/4.4.png" alt="" width="835" height="418"/>
-                </div>
+               
                 
 
               </div>
@@ -302,8 +326,8 @@
             <div class="col-lg-4 col-xl-3">
               
               <ul class="nav list-category list-category-down-md-inline-block">
-                <li class="list-category-item wow fadeInRight" role="presentation" data-wow-delay="0s"><a class="active" href="#tabs-4-1" data-toggle="tab">Encontrar elementos HTML</a></li>
-                <li class="list-category-item wow fadeInRight" role="presentation" data-wow-delay=".1s"><a href="#tabs-4-2" data-toggle="tab">Cambio de elementos HTML</a></li>
+                <li class="list-category-item wow fadeInRight" role="presentation" data-wow-delay="0s"><a class="active" href="#tabs-4-12" data-toggle="tab">HTML DOM NodeList</a></li>
+                <li class="list-category-item wow fadeInRight" role="presentation" data-wow-delay=".1s"><a href="#tabs-4-13" data-toggle="tab">Longitud de la lista de nodos</a></li>
                 <li class="list-category-item wow fadeInRight" role="presentation" data-wow-delay=".2s"><a href="Ejemplos6.html" data-toggle="tab">Vamos a aprender </a></li>
                
               
@@ -311,16 +335,14 @@
             <div class="col-lg-8 col-xl-9">
               <!-- Tab panes-->
               <div class="tab-content tab-content-1">
-                <div class="tab-pane fade show active" id="tabs-4-1">
+                <div class="tab-pane fade show active" id="tabs-4-12">
                   <h4>Lista de Nodos DOM </h4>
-                  <p>El objeto del documento HTML DOM es el propietario de todos los demás objetos en su página web.El objeto de documento HTML DOM, el objeto del documento representa su página web. Si desea acceder a cualquier elemento en una página HTML, siempre comienza accediendo al objeto del documento. A continuación se muestran algunos ejemplos de cómo puede utilizar el objeto de documento para acceder y manipular HTML.</p><img src="images/4.2.png" alt="" width="835" height="418"/>
+                  <p>Un NodeListobjeto es una lista (colección) de nodos extraídos de un documento.Un NodeListobjeto es casi lo mismo que un HTMLCollectionobjeto.Algunos navegadores (más antiguos) devuelven un objeto NodeList en lugar de HTMLCollection para métodos como getElementsByClassName().Todos los navegadores devuelven un objeto NodeList para la propiedad childNodes. La mayoría de los navegadores devuelven un objeto NodeList para el método querySelectorAll().</p><img src="images/ln1.png" alt="" width="835" height="418"/>
                 </div>
-                <div class="tab-pane fade" id="tabs-4-2"><h4>COMPONENTES </h4>
-                  <img src="images/4.3.png" alt="" width="835" height="418"/>
+                <div class="tab-pane fade" id="tabs-4-13"><h4>longitud </h4><p>La lengthpropiedad define el número de nodos en una lista de nodos, la length propiedad es útil cuando desea recorrer los nodos en una lista de nodos</p>
+                  <img src="images/ln2.png" alt="" width="835" height="418"/>
                 </div>
-                <div class="tab-pane fade" id="tabs-4-3"><h4>COMPONENTES </h4>
-                <img src="images/4.4.png" alt="" width="835" height="418"/>
-                </div>
+               
                 
 
               </div>
@@ -337,8 +359,8 @@
             <div class="col-lg-4 col-xl-3">
               
               <ul class="nav list-category list-category-down-md-inline-block">
-                <li class="list-category-item wow fadeInRight" role="presentation" data-wow-delay="0s"><a class="active" href="#tabs-4-1" data-toggle="tab">Encontrar elementos HTML</a></li>
-                <li class="list-category-item wow fadeInRight" role="presentation" data-wow-delay=".1s"><a href="#tabs-4-2" data-toggle="tab">Cambio de elementos HTML</a></li>
+                <li class="list-category-item wow fadeInRight" role="presentation" data-wow-delay="0s"><a class="active" href="#tabs-4-14" data-toggle="tab">HTML DOM Navegación</a></li>
+                <li class="list-category-item wow fadeInRight" role="presentation" data-wow-delay=".1s"><a href="#tabs-4-15" data-toggle="tab">Nodos DOM</a></li>
                 <li class="list-category-item wow fadeInRight" role="presentation" data-wow-delay=".2s"><a href="Ejemplos7.html" data-toggle="tab">Vamos a aprender </a></li>
                
               
@@ -346,16 +368,22 @@
             <div class="col-lg-8 col-xl-9">
               <!-- Tab panes-->
               <div class="tab-content tab-content-1">
-                <div class="tab-pane fade show active" id="tabs-4-1">
+                <div class="tab-pane fade show active" id="tabs-4-14">
                   <h4>Navegacion DOM </h4>
-                  <p>El objeto del documento HTML DOM es el propietario de todos los demás objetos en su página web.El objeto de documento HTML DOM, el objeto del documento representa su página web. Si desea acceder a cualquier elemento en una página HTML, siempre comienza accediendo al objeto del documento. A continuación se muestran algunos ejemplos de cómo puede utilizar el objeto de documento para acceder y manipular HTML.</p><img src="images/4.2.png" alt="" width="835" height="418"/>
+                  <p>Con HTML DOM, puede navegar por el árbol de nodos utilizando relaciones de nodos..</p><img src="images/na1.png" alt="" width="835" height="418"/>
                 </div>
-                <div class="tab-pane fade" id="tabs-4-2"><h4>COMPONENTES </h4>
-                  <img src="images/4.3.png" alt="" width="835" height="418"/>
+                <div class="tab-pane fade" id="tabs-4-15"><h4>Nodos DOM </h4><ul>
+                  <li>Todo el documento es un nodo de documento.</li>
+                  <li>Cada elemento HTML es un nodo de elemento</li>
+                  <li>El texto dentro de los elementos HTML son nodos de texto.</li>
+                  <li>Cada atributo HTML es un nodo de atributo (obsoleto)</li>
+                  <li>Todos los comentarios son nodos de comentarios.</li>
+                  
+
+                </ul>
+                  
                 </div>
-                <div class="tab-pane fade" id="tabs-4-3"><h4>COMPONENTES </h4>
-                <img src="images/4.4.png" alt="" width="835" height="418"/>
-                </div>
+              
                 
 
               </div>
